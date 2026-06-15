@@ -1,0 +1,46 @@
+
+*{
+    box-sizing: border-box;
+}
+
+#hero{
+    padding: 50px;
+    margin-bottom: 40px;
+}
+body{
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+h1, h2{
+    color: #8d711f;
+    line-height: 28px;
+    margin-top: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.feature-card{
+    background-color: white;
+    border: solid 1px;
+}
+
+.text-highlight{
+    font-weight: bold;
+}
+
+a:hover{
+    color:#8d711f ;
+}
+
+input{
+    padding: 5px;
+    border-radius: 20px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 20px;
+}
