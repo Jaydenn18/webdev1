@@ -1,0 +1,164 @@
+.quote-card{
+    background-color: #fff8f0;
+    border-left: 6px solid #f97316;
+    padding: 24px 28px;
+    max-width: 300px;
+    border-radius: 0 8px 8px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+blockquote{
+    font-size: 1rem;
+    color: #1c1917;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+cite{
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.78rem;
+    color: #78716c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.stats{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    background-color: #1e1b4b;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 350px;
+}
+
+.stat{
+    flex: 1;
+    text-align: center;
+    padding: 20px 16px;
+    border-right: 1px solid #312e81;
+}
+
+.num{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #a5b4fc;
+    margin-bottom: 4px;
+}
+
+.label{
+    display: block;
+    font-size: 0.7rem;
+    color: #818cfc;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.field{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 260px;
+}
+
+label{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color:#1e3a5f;
+    letter-spacing: 0.5px;
+}
+
+input{
+    padding: 10px 14px;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background-color: #f8fafc;
+    outline: none;
+}
+
+input:focus{
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+.helper{
+    font-size: 0.72rem;
+    color: #64748b;
+}
+
+.banner{
+    margin-top: 20px;
+    background-color: #0f0f23;
+    padding: 28px 32px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(98deg, #f97316, #ec4899, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+}
+
+p{
+    font-size: 0.82rem;
+    color: #6b7280;
+}
+
+.price-card{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 24px 28px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0,0.6);
+}
+
+.label-plan{
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #94a3b8;
+    margin-bottom: 8px;
+}
+
+.old-price{
+    font-size: 1rem;
+    color: #94a3b8;
+    text-decoration: line-through;
+    margin: 4px;
+}
+
+.new-price{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #16a34a;
+}
+
+.save-badge{
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #dcfce7;
+    color: #16a34a;
+    font-size: 0.72rem;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 20px;
+}

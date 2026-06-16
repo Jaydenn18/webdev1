@@ -1,0 +1,25 @@
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+#tag-html{
+    background-color: #FF6B6B;
+}
+
+#tag-css{
+    background-color: #4EC0C4;
+}
+
+#tag-js{
+    background-color: #FFE66D;
+    color: #333;
+}
+
+#tag-py{
+    background-color: #A8E6CF;
+    color: #333;
+}
