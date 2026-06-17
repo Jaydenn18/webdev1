@@ -139,3 +139,47 @@ body{
     line-height: 1.4;
 }
 
+.nav-menu{
+    display: block;
+    width: 200px;
+    background-color: #1e293b;
+    padding: 8px;
+    border-radius: 15px;
+   
+    
+}
+
+
+.nav-link{
+    margin-bottom: 4px;
+    display: block;
+    width: 100%;
+    padding: 8px 0px;
+   
+
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #94a3b8;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.not-active:hover{
+    color: #ffff;
+    background-color: #334155;
+
+}
+
+.active-item{
+    color: #38bdf8;
+    background-color: #0f172a;
+    font-weight: 600;
+}
+
+
