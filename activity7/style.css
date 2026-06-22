@@ -23,12 +23,18 @@
     width: 90px;
 }
 
-#one{
-    width: 100px;
+
+
+.box.short{
+    height: 30px;
 }
 
-#two{
-    width:  150px;
+.box.tall{
+    height: 50px;
+}
+
+.box.medium{
+    height: 40px;
 }
 
 .container{
@@ -48,11 +54,17 @@
   
 }
 
+/* 
+NUMBER 4
+.card{
+    width: 100px;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
+} */
 
 
 /* Continuation of #6 */
@@ -72,24 +84,61 @@
 
 /* end of #7 */
 
+/* 
+Number 8
+
+.box.small{
+    width: 30px;
+}
+
+.box.wide{
+    width: 50px;
+}
+
+.box.medium{
+    width: 40px;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-}
+} */
 
 
+/* 
+NUMBER 9
 .container{
     display: flex;
     gap: 20px;
-}
+} */
 
+/* 
+NUMBER 10
+
+.card{
+    width: 90px;
+}
 .container{
     width: 360px;
     height: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+} */
+
+.container{
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 360px;
+    height: 220px;
+}
+
+.card{
+    background-color: antiquewhite;
+    width: 155px;
 }
