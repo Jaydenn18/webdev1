@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-card{
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(209, 209, 209);
+    width: 300px;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.profile{
+    font-size: 1.5rem;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: rgb(58, 133, 245);
+}
+
+.profile-name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 16px 0px;
+}
+
+.role{
+    color: rgb(148, 148, 148);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: space-evenly;
+    justify-content: center;
+    /* border: 1px solid rgb(209, 209, 209); */
+    padding: 30px;
+}
+
+.subscription-card{
+    display: flex;
+    padding: 30px 50px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 20px;
+}
+
+.sub-class{
+    text-transform: uppercase;
+    color: rgb(148, 148, 148);
+    margin-bottom: 20px;
+}
+
+.recurrence{
+    font-size: 1rem;
+    color: rgb(148, 148, 148);
+    font-weight: 500;
+}
+
+nav{
+    border-radius: 10px;
+    border: 1px solid rgb(209, 209, 209);
+    padding: 20px;
+    display: flex;
+    align-content:space-around;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+ul{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+li{
+    margin: 0px 10px;
+}
+
+a{
+    color: rgb(103, 103, 103);
+    text-decoration: none;
+}
+
+.sign-up{
+    color: white;
+    border: none;
+    background-color: rgb(49, 74, 236);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#brandly-logo{
+    font-size: 1.5rem;
+}
+
+.comment-wrapper{
+    margin: 30px;
+    border: 1px solid rgb(209, 209, 209);
+    display: flex;
+    width: 30%;
+    padding: 30px;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.comment-profile{
+    background-color: rgb(246, 104, 57);
+    border-radius: 100%;
+    padding: 30px;
+    
+}
+
+.username{
+    font-size: 1.2rem;
+    margin: 8px 0px;
+    font-weight: bold;
+}
+
+.comment{
+    font-size: 1.1rem;
+    color: rgb(103, 103, 103);
+}
+
+.tag-list-wrapper{
+    display: flex;
+    width: 50%;
+    border: 1px solid rgb(209, 209, 209);
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.tag{
+    background-color: #EEF1FF;
+    color:#4661fe ;
+    padding: 12px 16px;
+    margin: 8px;
+    font-weight: bold;
+    border-radius: 20px;
+}
