@@ -21,14 +21,21 @@ main{
     width: 300px;
     margin-top: 30px;
     padding: 30px;
+  
 }
 
 .profile{
+    display: flex;
+    text-align: center;
+    align-items: center;
     font-size: 1.5rem;
     color: white;
     padding: 20px;
     border-radius: 50%;
     background-color: rgb(58, 133, 245);
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
 }
 
 .profile-name{
@@ -123,9 +130,17 @@ a{
 }
 
 .comment-profile{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(246, 104, 57);
     border-radius: 100%;
     padding: 30px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
     
 }
 
