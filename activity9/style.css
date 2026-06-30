@@ -9,9 +9,14 @@ to the immediate parent of the elements you want to align */
     font-family: 'Inter';
 }
 
-.hero{
+body{
     background-color: #faf8f5;
 }
+
+.hero{
+    max-width: 1140px;
+}
+
 h1, .value-label{
     font-family: 'Space Grotesk';
 }
