@@ -17,15 +17,16 @@ body{
     max-width: 1140px;
 }
 
-h1, .value-label{
+h1, .value-label, .navbar-logo{
     font-family: 'Space Grotesk';
 }
-header{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 60px;
     border-bottom: solid 1px #e3ded7;
+    font-size: 1rem;
 }
 
 .navbar-links{
@@ -34,9 +35,6 @@ header{
     list-style-type: none;
 }
 
-.navbar{
-    font-size: 1rem;
-}
 
 .navbar-logo{
     font-weight: bold;
