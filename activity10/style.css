@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+body{
+    background-color: #faf8f5;
+}
+
+h1, .value-label, .navbar-logo{
+    font-family: 'Space Grotesk';
+}
+
+a{
+    text-decoration: none;
+    color: #505050;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.navbar-logo{
+    font-weight: bold;
+}
+
+
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 20px;
+    border-bottom: solid 1px #e3ded7;
+}
+
+nav{
+    width: 100%;
+}
+
+.navbar-toggle{
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #505050;
+}
+
+.navbar-links{
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.navbar-links.is-open{
+    display: flex;
+}
+
+.hero{
+    padding: 40px 20px;
+}
+
+.hero-eyebrow{
+    margin-bottom: 20px;
+    font-size: .75rem;
+    text-transform: uppercase;
+    color: #b5562e;
+    font-weight: bold;
+}
+
+.hero-title{
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.hero-desc{
+    color: rgb(69, 69, 69);
+    margin-bottom: 32px;
+}
+
+.hero-panel{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.info-card{
+    background-color: white;
+    border: solid 1px #e3ded7;
+    padding: 20px;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.small-label{
+    text-transform: uppercase;
+    color: #99938a;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 10px;
+}
+
+.info-card-accent{
+    background-color: #b5562e;
+    color: white;
+}
+
+.info-card-accent .small-label{
+    color: #ffd5bc;
+}
+
+.btn{
+    display: inline-block;
+    background-color: black;
+    padding: 15px 30px;
+    text-align: center;
+    color: white;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover{
+    background-color: #2a2a2a;
+    transform: translateY(-2px);
+}
+
+.skills{
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.skills-par{
+    text-transform: uppercase;
+    color: #b5562e;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-bottom: 16px;
+}
+
+.skills-title{
+    font-size: 1.6rem;
+    margin-bottom: 32px;
+}
+
+
+.skill-card{
+    background-color: white;
+    border: solid 1px #e3ded7;
+    padding: 30px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.skill-card:hover{
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+.number-label{
+    font-size: 0.8rem;
+    color: #99938a;
+    margin-bottom: 16px;
+}
+
+.skill-name{
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.skill-desc{
+    color: rgb(69, 69, 69);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.contact{
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 60px 24px;
+}
+
+.contact-label{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: #ffd5bc;
+    margin-bottom: 24px;
+}
+
+.contact-title{
+    font-size: 1.8rem;
+    margin-bottom: 32px;
+}
+
+.contact-desc{
+    color: #99938a;
+    margin-bottom: 32px;
+}
+
+.btn-outline{
+    background-color: white;
+    color: #b5562e;
+    padding: 15px 30px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-outline:hover{
+    background-color: #ffe9dc;
+    transform: translateY(-2px);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    padding: 24px 20px;
+    border-top: solid 1px #e3ded7;
+    font-size: 0.85rem;
+}
+
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    list-style-type: none;
+}
+
+
+
+@media (min-width: 640px){
+
+    .navbar{
+        flex-wrap: nowrap;
+    }
+
+    nav{
+        width: auto;
+    }
+
+    .navbar-toggle{
+        display: none;
+    }
+
+    .navbar-links{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        margin-top: 0;
+    }
+
+    .skills-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .skill-card{
+        margin-bottom: 0;
+    }
+
+    
+    .skill-card-wide{
+        grid-column: span 2;
+    }
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 24px 60px;
+    }
+}
+
+
+
+
+@media (min-width: 900px){
+
+    .hero{
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 100px 60px;
+    }
+
+    .hero-text{
+        flex: 1.2;
+    }
+
+    .hero-panel{
+        flex: 1;
+        margin-top: 0;
+    }
+
+    .hero-title{
+        font-size: 2rem;
+    }
+
+    .skills{
+        padding: 100px 60px;
+    }
+
+    .skills-grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .skill-card-wide{
+        grid-column: span 2;
+    }
+
+    .contact{
+        padding: 100px 60px;
+    }
+
+    .contact-title{
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+/* Checkpoint 1:
+   The section that most surprised me was the Skills grid. I predicted
+   I'd need at least a "display: block" or something explicit to force the cards into a single column, 
+   but articles are block-level by default, so a plain stack with full width happened for free - the only thing 
+   missing was spacing, which margin-bottom handled. The
+   navbar surprised me the other way: I assumed zero CSS would be
+   "good enough" on mobile, but a bare header/nav/ul actually renders
+   left-aligned and touching the screen edge with no gap between the
+   logo and the links, so it still needed padding, a gap, and (once
+   the toggle button was added) flex-wrap to push the link list onto
+   its own line. */
+
+/* Checkpoint 2:
+   Picking breakpoints from fixed device widths assumes every layout gets cramped at the same point, but
+   that's really a property of the content - a headline with long words, three nav links 
+   vs. six, or wider padding will all hit "looks cramped" at different widths. 
+   A component tuned to someone else's 768px tablet breakpoint can still look awkward on a real
+   768px device if its own content wraps or overflows a little
+   earlier or later than that number assumes. Testing my own content
+   and choosing the width where it actually starts looking bad (640px
+   and 900px here) means the breakpoints describe this page, not a
+   generic device catalog. */
+
+/* Checkpoint 3:
+   CSS media queries can only react to properties of the viewport - 
+   things like width, height, or orientation - because that's the
+   only "state" a stylesheet is allowed to read. 
+   A click is a one-time event with no persistent property to query: 
+   there's no CSS media feature for "has this button been pressed." Toggling the menu open
+   requires remembering that the user clicked (state), which is a job
+   for JavaScript's event listeners and classList, not for a stylesheet
+   that only ever asks "how wide is the screen right now?" */
