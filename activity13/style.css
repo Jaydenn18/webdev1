@@ -1,0 +1,56 @@
+:root{
+    --main: rgb(23, 23, 107);
+}
+
+*{
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main);
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.nav-anchor{
+    color: white;
+    text-decoration: none;
+}
+
+.contact{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#home{
+    padding: 70px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+
+
+
