@@ -399,6 +399,36 @@ a {
 .sidebar-footer .who span{
     font-size: 0.75rem; color: var(--muted);
 }
+
+.page-title{ font-size:1.4rem; font-weight:700; margin:0 0 2px; }
+.page-sub{ color:var(--muted); font-size:0.9rem; margin:0 0 20px; }
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin-bottom:28px;
+}
+.stat-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:16px;
+  box-shadow:var(--shadow);
+}
+.stat-icon{
+  width:34px; height:34px; border-radius:9px;
+  background:var(--primary-light); color:var(--primary);
+  display:flex; align-items:center; justify-content:center;
+  margin-bottom:10px;
+}
+.stat-icon .icon{ width:18px; height:18px; }
+.stat-card.accent .stat-icon{ background:var(--accent-light); color:var(--accent); }
+.stat-card .stat-value{ font-size:1.6rem; font-weight:800; line-height:1; }
+.stat-card .stat-label{ color:var(--muted); font-size:0.8rem; margin:5px 0 8px; }
+.stat-trend{ font-size:0.72rem; font-weight:600; color:var(--primary); }
+.stat-trend.warn{ color:var(--accent); }
+
 @media (min-width: 1000px) {
     body {
         display: flex;
