@@ -25,27 +25,7 @@ console.log("Original Library:", library);
 console.log("Copied Library:", copiedLibrary);
 
 /*
-Why did the original change too?
-
-A shallow copy (using {...library} or Object.assign({}, library)) only
-copies the library object's TOP-LEVEL properties. The `books` property
-holds an array, and arrays/objects in JavaScript are reference types —
-so the copy's `books` property doesn't get a new array, it just gets a
-copy of the REFERENCE (memory address) pointing to the same array the
-original uses. copiedLibrary.books and library.books are therefore two
-different variables pointing at the exact same array and the exact same
-book objects inside it. Mutating a book (copiedLibrary.books[0].isAvailable
-= false) changes that shared object, so the change is visible through
-library.books[0] as well.
-
-How to prevent it — use a DEEP copy instead, which recursively copies
-every nested object/array so no references are shared:
-  - structuredClone(library)              // modern, built-in
-  - JSON.parse(JSON.stringify(library))   // simple, but loses functions/dates
-  - a hand-written recursive clone function
-
-With a true deep copy, editing copiedLibrary.books[0] would leave
-library.books[0] completely untouched.
+The reason modifying the copy messed up the original library has to do with how JavaScript manages memory. The spread operator (...) creates what's called a "shallow copy." This means it duplicates the main top-level properties (like the library's name), but it takes a shortcut with nested objects or arrays (like our books). Instead of cloning that entire nested list, it just duplicates the memory pointer to the original array. Since both libraries point to the exact same array in memory, changing a book in one affects both. To get a completely independent copy where nested items are fully duplicated, you need a "deep copy." The cleanest way to do this in modern JS is: const trueClone = structuredClone(library);
 */
 ```
 
